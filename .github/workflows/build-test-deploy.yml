@@ -10,14 +10,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npm update
- #     - name: Install dependencies
-      - run:
-          mkdir -p action-learning-pathway
-          cd action-learning-pathway
-          npm install
-#        working-directory: ./action-learning-pathway
-        
+      - run: npm init -y
+      - run: npm install
       - run: npm run build 
   test: 
     needs: build
