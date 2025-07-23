@@ -12,7 +12,7 @@ jobs:
           node-version: '18.x'
       - run: npm init -y
       - run: npm install
-      - run: npm run build 
+      - run: npm run 
   test: 
     needs: build
     runs-on: ubuntu-latest
