@@ -13,7 +13,14 @@ jobs:
       - run: npm init -y
       - run: npm install
       - run: npm run 
-  test: 
+  name: Test
+   on:
+     push:
+       branches: [main ]
+     pull_requests:
+       branches: [ main ]
+jobs:
+  test:
     needs: build
     runs-on: ubuntu-latest
     steps: 
@@ -23,14 +30,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      #- run: npx jest --init
-      - run: 
-             npm init -y
-             npx create-jest
-             #npm install --save-dev jest ts-jest @types/jest typescript
-             #npx create-jest
-      #- run: npx ts-jest config:init
+      - name: initialize npm and jest
+        run: |
+          npm init -y
+          npm install --save-dev jest ts-jest @types/jest typescript
+          npx create-jest
+      - name: Install dependencies   
       - run: npm install
+      - name: Run tests
       - run: npm test
   deploy:
     needs: test
