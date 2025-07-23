@@ -9,7 +9,7 @@
               "scripts":{
                  "build": "hello-world-scripts build"
               }
-               "scripts:"{
+               "scripts":{
                  "test": "jest"
               }
     
