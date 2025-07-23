@@ -10,8 +10,8 @@
                  "build": "hello-world-scripts build"
               }
                "scripts":{
-                 "test": "jest"
-              }
+                  "test": "jest"       
+               }
     
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
     "format": "prettier --write '**/*.ts'",
