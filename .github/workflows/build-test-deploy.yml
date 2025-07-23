@@ -23,8 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npx jest --init
-      - run: npm install --save-dev jest ts-jest @type/jest
+      #- run: npx jest --init
+      - run: 
+             npm init jest@latest
+             npm install --save-dev babel-jest @babel/core @babel/preset-env
       - run: npx ts-jest config:init
       - run: npm install
       - run: npm test
