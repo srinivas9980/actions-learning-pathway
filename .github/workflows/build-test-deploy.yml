@@ -25,9 +25,9 @@ jobs:
           node-version: '18.x'
       #- run: npx jest --init
       - run: 
-             npm init jest@latest
+             npm init jest
              npm install --save-dev jest ts-jest @types/jest typescript
-             npx create-jest
+             npx jest
       - run: npx ts-jest config:init
       - run: npm install
       - run: npm test
