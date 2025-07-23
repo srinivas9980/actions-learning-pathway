@@ -13,9 +13,10 @@ jobs:
       - run: npm update
  #     - name: Install dependencies
       - run:
+          mkdir -p action-learning-pathway
           cd action-learning-pathway
           npm install
-        working-directory: ./action-learning-pathway
+#        working-directory: ./action-learning-pathway
         
       - run: npm run build 
   test: 
