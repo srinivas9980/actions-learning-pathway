@@ -4,6 +4,12 @@
   "description": "checkout action",
   "main": "lib/main.js",
   "scripts": {
+              "name": "hello-world",
+              "version": "1.0.0",
+              "scripts":{
+                 "build": "hello-world-scripts build"
+              }
+    
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
     "format": "prettier --write '**/*.ts'",
     "format-check": "prettier --check '**/*.ts'",
