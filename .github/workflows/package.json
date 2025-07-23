@@ -9,13 +9,8 @@
               "scripts":{
                  "build": "hello-world-scripts build"
               }
-                "name": "hello-world"
-                 "version": "1.0.0.",
-                 "scripts": {
-                   "test": "echo \"No tests specified\" && exit 1"
-                    }
-                  
-              "scripts":{
+                
+                "scripts":{
                   "test": "jest"       
                }
     
