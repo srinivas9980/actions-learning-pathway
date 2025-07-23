@@ -26,7 +26,8 @@ jobs:
       #- run: npx jest --init
       - run: 
              npm init jest@latest
-             npm install --save-dev @jest/globals
+             npm install --save-dev jest ts-jest @types/jest typescript
+             npx create-jest
       - run: npx ts-jest config:init
       - run: npm install
       - run: npm test
