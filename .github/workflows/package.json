@@ -9,7 +9,8 @@
               "name": "hello-world",
               "version": "1.0.0",
               "scripts":{
-                "test": "echo \"No test specified\""
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "int-test": "mocha --require babel-core/register --recursive test"
                }      
             },
   
