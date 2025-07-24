@@ -9,10 +9,7 @@
               "scripts":{
                  "build": "hello-world-scripts build"
               }
-           "scripts": {
-             "start": "node index.js",
-             "test": "jest"
-           }
+           
 }
     
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
