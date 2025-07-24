@@ -32,7 +32,7 @@ jobs:
       - run: npm install
       - name: Run tests
       - run: npm test
-  on:
+runs-on:
    push:
      branches:
        - main
