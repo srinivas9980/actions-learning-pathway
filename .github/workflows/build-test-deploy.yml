@@ -34,6 +34,7 @@ jobs:
         run: npm test
   deploy:
     needs: test
+    run-on: ubuntu-latest
     permissions:
       contents: write
       pages: write
@@ -41,7 +42,6 @@ jobs:
     environment:
       name: production
       url: ${{ steps.deploy.outputs.page_url }}
-    run-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
