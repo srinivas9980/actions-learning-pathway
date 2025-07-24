@@ -36,7 +36,9 @@ jobs:
         with:
           static_site_generator: next
       - name: install dependencies
-        run: npm install
+        run: |
+             npm init -y
+             npm install
       - name: build project
         run: npm run build
       - name: upload artifacts
