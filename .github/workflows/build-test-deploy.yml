@@ -36,7 +36,7 @@ jobs:
    push:
      branches:
        - main
-   workflow_dispatch:
+  # workflow_dispatch:
    deploy:
     needs: test
     run-on: ubuntu-latest
