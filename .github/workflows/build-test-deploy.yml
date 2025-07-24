@@ -40,7 +40,8 @@ jobs:
              npm init -y
              npm install
       - name: build project
-        run: npm run build
+        run: ubuntu-latest
+             npm run build
       - name: upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
