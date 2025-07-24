@@ -37,8 +37,7 @@ runs-on:
      branches:
        - main
    workflow_dispatch:
-  
-  deploy:
+   deploy:
     needs: test
     permissions:
       contents: write
