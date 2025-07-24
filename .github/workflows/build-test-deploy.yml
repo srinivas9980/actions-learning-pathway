@@ -32,6 +32,12 @@ jobs:
       - run: npm install
       - name: Run tests
       - run: npm test
+  on:
+   push:
+     branches:
+       - main
+   workflow_dispatch:
+  
   deploy:
     needs: test
     permissions:
