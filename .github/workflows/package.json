@@ -8,9 +8,12 @@
               "version": "1.0.0",
               "scripts":{
                  "build": "hello-world-scripts build"
-   "scripts": {
-  "test": "mocha"
-},
+              }
+           "scripts": {
+             "start": "node index.js",
+             "test": "jest"
+           }
+}
     
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
     "format": "prettier --write '**/*.ts'",
