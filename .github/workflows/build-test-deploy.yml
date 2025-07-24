@@ -15,7 +15,7 @@ jobs:
       - run: npm run
  
   deploy:
-    #needs: test
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
