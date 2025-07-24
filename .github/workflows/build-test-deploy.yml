@@ -29,9 +29,9 @@ jobs:
           npm install --save-dev jest ts-jest @types/jest typescript
           npx create-jest
       - name: Install dependencies
-      - run: npm install
+        run: npm install
       - name: Run tests
-      - run: npm test
+        run: npm test
   uses:
    push:
      branches:
@@ -43,10 +43,10 @@ jobs:
       contents: write
       pages: write
       id-token: write
-    run-on: ubuntu-latest
     environment:
       name: production
       url: ${{ steps.deploy.outputs.page_url }}
+    run-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
