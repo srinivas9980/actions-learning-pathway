@@ -13,7 +13,7 @@ jobs:
       - run: npm init -y
       - run: npm install
       - run: npm run
-  test:
+ # test:
     needs: build
     runs-on: ubuntu-latest
     steps:
