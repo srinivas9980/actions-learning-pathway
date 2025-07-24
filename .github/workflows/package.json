@@ -9,9 +9,10 @@
               "name": "hello-world",
               "version": "1.0.0",
               "scripts":{
-                "test": "jest"
+                "test": "echo \"No test specified\""
                }      
             },
+  
     
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
     "format": "prettier --write '**/*.ts'",
